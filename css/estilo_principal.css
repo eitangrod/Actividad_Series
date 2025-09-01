@@ -5,22 +5,61 @@ a{
     color:#043865;
 }
 
-header{
+header {
     background-color: #04021d;
     height: 200px;
     width: 100%;
+    /* Puedes agregar padding si lo necesitas */
 }
 
 *{
     padding: 0%;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    background: none;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #043865;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #d0eaff;
+}
+
 nav ul li{
     text-align: center;
-    width: 80px ;
-    height: 20px ;
+    width: 120px;   
+    height: 40px;   
     background-color:#a6cccc;
-    margin: 10px
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -59,3 +98,38 @@ footer{
     background-color: #121f12;
     padding: 200px
 }
+
+.parrafoVerde{
+    color:#00ff99;
+    background-color: #043865;
+    border: #ffdc00;
+}
+
+.peronajes{
+    color:#ffdc00;
+    background-color: #043865;
+    border: #00ff99;
+    margin: 50px;
+    padding: 30px;
+}
+
+.boton {
+    background-color: #043865;
+    color: #ffdc00;
+    border: 2px solid #3fff00;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-family: 'Rubik Moonrocks', cursive;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    margin: 10px;
+}
+
+.boton:hover {
+    background-color: #3fff00;
+    color: #04021d;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+

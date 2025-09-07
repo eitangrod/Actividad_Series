@@ -9,7 +9,10 @@ header {
     background-color: #04021d;
     height: 200px;
     width: 100%;
-    /* Puedes agregar padding si lo necesitas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 *{
@@ -96,7 +99,12 @@ p {
 
 footer{
     background-color: #121f12;
-    padding: 200px
+    padding: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .parrafoVerde{
@@ -111,6 +119,8 @@ footer{
     border: #00ff99;
     margin: 50px;
     padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .boton {
@@ -131,5 +141,22 @@ footer{
     color: #04021d;
     transform: scale(1.05);
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        min-height: 80px;
+        padding: 20px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
 }
 
